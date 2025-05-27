@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(145deg, #f0e9e9, #d9d2d2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container utama */
+#app {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Box form login */
+.login-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.login-box:hover {
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.15);
+    background-color: #fff4f4;
+}
+
+/* Judul form */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #d35454;
+    font-weight: 600;
+}
+
+/* Input teks */
+.input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #ff8888;
+}
+
+/* Tombol login */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff8888;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff6b6b;
+    transform: scale(1.02);
+}
+
+/* Error box */
+ul {
+    text-align: left;
+    color: #d00000;
+    background-color: #ffe0e0;
+    padding: 10px 15px;
+    border-radius: 8px;
+    list-style-position: inside;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive tweak */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
